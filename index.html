@@ -168,7 +168,7 @@
 
     <!-- Caixa Expansível -->
       <div class="expandable">
-        <a href="#" onclick="toggleContent()">Clique aqui para mais detalhes</a>
+        <a href="#" onclick="toggleContent()">Mais informações</a>
         <div class="expandable-content" id="more-info">
           <p>O carro está em excelente estado de conservação, com pneus novos e revisões em dia. Possui bancos de couro, ar-condicionado digital e direção elétrica. Sem detalhes de funilaria ou pintura.</p>
         </div>
@@ -179,6 +179,17 @@
         <a href="https://wa.me/+5548999495056" target="_blank">Entre em Contato pelo WhatsApp</a>
     </div>
 </div>
+    
+    <script>
+    function toggleContent() {
+      const content = document.getElementById('more-info');
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+      } else {
+        content.style.display = 'none';
+      }
+    }
+  </script>
 
 </body>
 </html>
