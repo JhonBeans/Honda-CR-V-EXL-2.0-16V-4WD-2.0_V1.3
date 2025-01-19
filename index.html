@@ -20,6 +20,11 @@
             padding: 10px 0;
         }
 
+        .price-location {
+            text-align: left;
+            margin: 10px 0;
+        }
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -102,6 +107,12 @@
     <h2>Venda particular</h2>
 </header>
 
+<!-- Preço e Localização -->
+  <div class="price-location">
+    <h2>R$ 73.500</h2>
+    <p>Tubarão/SC - Contato: Joel</p>
+  </div>
+
 <div class="container">
     <!-- Carrossel de imagens -->
     <div class="carousel">
@@ -142,6 +153,14 @@
         </div>
     </div>
 
+    <!-- Caixa Expansível -->
+      <div class="expandable">
+        <a href="#" onclick="toggleContent()">Clique aqui para mais detalhes</a>
+        <div class="expandable-content" id="more-info">
+          <p>O carro está em excelente estado de conservação, com pneus novos e revisões em dia. Possui bancos de couro, ar-condicionado digital e direção elétrica. Sem detalhes de funilaria ou pintura.</p>
+        </div>
+    </div>
+    
     <!-- Call to Action -->
     <div class="cta">
         <a href="https://wa.me/+5548999495056" target="_blank">Entre em Contato pelo WhatsApp</a>
